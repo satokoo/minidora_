@@ -1,2 +1,3 @@
 # janken
 # janken
+# minidora_
