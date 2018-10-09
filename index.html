@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="ja">
+    <head>
+        <meta charset="utf-8">
+        <title>minidora-voice</title>
+        <link rel="stylesheet" href="stylesheet.css">
+    </head>
+
+    <body>
+        <div class="Q1">
+          <p><h1>◆会話1</h1></p>
+          <p>Q:好きな季節はなんですか？</p>
+          <p>A:<button id="play1">再生</button>
+          <div id="wrap1"></div>
+          <p>Q1:なんて答えたと思いましたか？</p>
+          <form>
+              <input>
+              <input class="contact-submit" type="submit" value="送信" />
+              <border>
+          </form>
+        </div>
+
+
+        <div class="Q2">
+          <p><h1>◆会話2</h1></p>
+          <p>Q:好きな季節はなんですか？</p>
+          <p>A:<button id="play2">再生</button>
+          <div id="wrap2"></div>
+          <p>Q2:なんて答えたと思いましたか？</p>
+          <form>
+              <input>
+              <input class="contact-submit" type="submit" value="送信" />
+              <border>
+          </form>
+        </div>
+
+
+        <div class="Q3">
+          <p><h1>◆会話3</h1></p>
+          <p>Q:好きな季節はなんですか？</p>
+          <p>A:<button id="play3">再生</button>
+          <div id="wrap3"></div>
+          <p>Q3:なんて答えたと思いましたか？</p>
+          <form>
+              <input>
+              <input class="contact-submit" type="submit" value="送信" />
+              <border>
+          </form>
+        </div>
+
+        <div class="Q4">
+          <p><h1>◆会話4</h1></p>
+          <p>Q:好きな季節はなんですか？</p>
+          <p>A:<button id="play4">再生</button>
+          <div id="wrap4"></div>
+          <p>Q4:なんて答えたと思いましたか？</p>
+          <form>
+              <input>
+              <input class="contact-submit" type="submit" value="送信" />
+              <border>
+          </form>
+        </div>
+
+        <div class="Q5">
+          <p><h1>◆会話5</h1></p>
+          <p>Q:好きな季節はなんですか？</p>
+          <p>A:<button id="play5">再生</button>
+          <div id="wrap5"></div>
+          <p>Q5:なんて答えたと思いましたか？</p>
+          <form>
+              <input>
+              <input class="contact-submit" type="submit" value="送信" />
+              <border>
+          </form>
+        </div>
+
+        <div class="Q6">
+          <p><h1>◆会話6</h1></p>
+          <p>Q:好きな季節はなんですか？</p>
+          <p>A:<button id="play6">再生</button>
+          <div id="wrap6"></div>
+          <p>Q6:なんて答えたと思いましたか？</p>
+          <form>
+              <input>
+              <input class="contact-submit" type="submit" value="送信" />
+              <border>
+          </form>
+        </div>
+
+        <div class="Q7">
+          <p><h1>◆会話7</h1></p>
+          <p>Q:好きな季節はなんですか？</p>
+          <p>A:<button id="play7">再生</button>
+          <div id="wrap7"></div>
+          <p>Q7:なんて答えたと思いましたか？</p>
+          <form>
+              <input>
+              <input class="contact-submit" type="submit" value="送信" />
+              <border>
+          </form>
+        </div>
+
+        <div class="Q8">
+          <p><h1>◆会話8</h1></p>
+          <p>Q:好きな季節はなんですか？</p>
+          <p>A:<button id="play8">再生</button>
+          <div id="wrap8"></div>
+          <p>Q8:なんて答えたと思いましたか？</p>
+          <form>
+              <input>
+              <input class="contact-submit" type="submit" value="送信" />
+              <border>
+          </form>
+        </div>
+
+        <div class="Q9">
+          <p><h1>◆会話9</h1></p>
+          <p>Q:好きな季節はなんですか？</p>
+          <p>A:<button id="play9">再生</button>
+          <div id="wrap9"></div>
+          <p>Q9:なんて答えたと思いましたか？</p>
+          <form>
+              <input>
+              <input class="contact-submit" type="submit" value="送信" />
+              <border>
+          </form>
+        </div>
+
+        <div class="Q10">
+          <p><h1>◆会話10</h1></p>
+          <p>Q:好きな季節はなんですか？</p>
+          <p>A:<button id="play10">再生</button>
+          <div id="wrap10"></div>
+          <p>Q10:なんて答えたと思いましたか？</p>
+          <form>
+              <input>
+              <input class="contact-submit" type="submit" value="送信" />
+              <border>
+          </form>
+        </div>
+
+        <script>
+
+          console.log( "しゅつりょく");
+
+          var src = [
+            　'minidora-voice/2_mushi.mp3',
+            　'minidora-voice/2_pan.mp3',
+　            'minidora-voice/2_tsuki.mp3',
+　            'minidora-voice/3_miruku.mp3',
+              'minidora-voice/3_nezumi.mp3',
+              'minidora-voice/3_ringo.mp3',
+              'minidora-voice/4_niwatori.mp3',
+              'minidora-voice/4_rimokon.mp3',
+              'minidora-voice/4_shimauma.mp3',
+              'minidora-voice/5_wankosoba.mp3',
+              'minidora-voice/5_medamayaki.mp3',
+              'minidora-voice/6_indoneshia.mp3',
+          ];
+
+          document.addEventListener("DOMContentLoaded", function(){
+              document.getElementById('play1').addEventListener('click', function () {
+　               var rand = Math.floor( Math.random() * src.length );
+                 console.log("Q1:"+rand);
+                 document.getElementById("wrap1").innerHTML = '<audio autoplay>' +
+　               '<source src="' + src[rand] + '" type="audio/mp3">' + '</audio>';
+              });
+          });
+
+          document.addEventListener("DOMContentLoaded", function(){
+              document.getElementById('play2').addEventListener('click', function () {
+　               var rand = Math.floor( Math.random() * src.length );
+                 console.log("Q2:"+rand);
+                 document.getElementById("wrap2").innerHTML = '<audio autoplay>' +
+　               '<source src="' + src[rand] + '" type="audio/mp3">' + '</audio>';
+              });
+          });
+
+          document.addEventListener("DOMContentLoaded", function(){
+              document.getElementById('play3').addEventListener('click', function () {
+　               var rand = Math.floor( Math.random() * src.length );
+                 console.log("Q3:"+rand);
+                 document.getElementById("wrap3").innerHTML = '<audio autoplay>' +
+　               '<source src="' + src[rand] + '" type="audio/mp3">' + '</audio>';
+              });
+          });
+
+          document.addEventListener("DOMContentLoaded", function(){
+              document.getElementById('play4').addEventListener('click', function () {
+　               var rand = Math.floor( Math.random() * src.length );
+                 document.getElementById("wrap4").innerHTML = '<audio autoplay>' +
+　               '<source src="' + src[rand] + '" type="audio/mp3">' + '</audio>';
+              });
+          });
+
+          document.addEventListener("DOMContentLoaded", function(){
+              document.getElementById('play5').addEventListener('click', function () {
+　               var rand = Math.floor( Math.random() * src.length );
+                 document.getElementById("wrap5").innerHTML = '<audio autoplay>' +
+　               '<source src="' + src[rand] + '" type="audio/mp3">' + '</audio>';
+              });
+          });
+
+          document.addEventListener("DOMContentLoaded", function(){
+              document.getElementById('play6').addEventListener('click', function () {
+　               var rand = Math.floor( Math.random() * src.length );
+                 document.getElementById("wrap6").innerHTML = '<audio autoplay>' +
+　               '<source src="' + src[rand] + '" type="audio/mp3">' + '</audio>';
+              });
+          });
+
+          document.addEventListener("DOMContentLoaded", function(){
+              document.getElementById('play7').addEventListener('click', function () {
+　               var rand = Math.floor( Math.random() * src.length );
+                 document.getElementById("wrap7").innerHTML = '<audio autoplay>' +
+　               '<source src="' + src[rand] + '" type="audio/mp3">' + '</audio>';
+              });
+          });
+
+          document.addEventListener("DOMContentLoaded", function(){
+              document.getElementById('play8').addEventListener('click', function () {
+　               var rand = Math.floor( Math.random() * src.length );
+                 document.getElementById("wrap8").innerHTML = '<audio autoplay>' +
+　               '<source src="' + src[rand] + '" type="audio/mp3">' + '</audio>';
+              });
+          });
+
+          document.addEventListener("DOMContentLoaded", function(){
+              document.getElementById('play9').addEventListener('click', function () {
+　               var rand = Math.floor( Math.random() * src.length );
+                 document.getElementById("wrap9").innerHTML = '<audio autoplay>' +
+　               '<source src="' + src[rand] + '" type="audio/mp3">' + '</audio>';
+              });
+          });
+
+          document.addEventListener("DOMContentLoaded", function(){
+              document.getElementById('play10').addEventListener('click', function () {
+　               var rand = Math.floor( Math.random() * src.length );
+                 document.getElementById("wrap10").innerHTML = '<audio autoplay>' +
+　               '<source src="' + src[rand] + '" type="audio/mp3">' + '</audio>';
+              });
+          });
+
+
+        </script>
+
+
+
+    </body>
+</html>
